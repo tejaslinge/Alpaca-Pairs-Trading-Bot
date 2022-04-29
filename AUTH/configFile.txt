@@ -3,7 +3,7 @@
         "timeframe": "1Minute",
         "spread": "True",
         "n_std": 0.25,
-        "pair": "PAGP/PAA",
+        "pair": "ticker_A/ticker_B",
         "minutes_from_market_start": 75.5,
         "close_at_x_std_dev": 0.5,
         "% allocation per trade": 95
