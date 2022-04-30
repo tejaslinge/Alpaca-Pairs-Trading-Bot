@@ -1,10 +1,10 @@
 # Alpaca-Pairs-Trading-Bot
 
-Pairs Trading Bot built using Alpaca API. Read along to understand the buy/sell criteria:
+Pairs Trading Bot built using Alpaca API. The bot uses Mean Reversion strategy with a few alterations. Read along to understand the buy/sell criteria:
 
 1. Calculate ***mean*** and ***standard deviation*** of the ***spread*** of stocks A and B.
-2. If ***mean - n*std > spread (last candle formed)***, ***buy A***, ***sell B***, else (if mean - n*std < spread) vice-versa.
-3. The bot closes both positions once the spread reaches mean again
+2. If ***mean - n*std_dev > spread (last candle formed)***, ***buy A***, ***sell B***, else (if mean - n*std_dev < spread) vice-versa. The value of "n" can be changed in **_configFile.txt_**. 
+3. The bot closes both positions once the spread reaches mean (or mean +- n*std_dev. This option can also be explored using the configFile.txt) again. 
 4. Repeat steps 1-4
 
 # Functions Used
